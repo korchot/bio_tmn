@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: เส้นทางชีวิต ธรรมนัส พรหมเผ่า</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Kanit', sans-serif;
+            background-color: #1a202c; /* Dark BG */
+            color: #e2e8f0;
+        }
+        .timeline-line {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, #3b82f6, #ef4444, #eab308);
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
+        }
+        /* Mobile adjustment for timeline */
+        @media (max-width: 768px) {
+            .timeline-line {
+                left: 2rem;
+            }
+            .timeline-content {
+                margin-left: 3rem !important;
+                width: auto !important;
+                text-align: left !important;
+            }
+            .timeline-dot {
+                left: 2rem !important;
+            }
+            .right-side {
+                margin-left: 3rem !important;
+            }
+            .left-side {
+                margin-left: 3rem !important;
+                justify-content: flex-start !important;
+            }
+            .left-side .card-box {
+                margin-right: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-12">
+
+    <!-- Header Section -->
+    <header class="text-center py-10 bg-gradient-to-b from-gray-900 to-gray-800 border-b border-gray-700 sticky top-0 z-50 shadow-xl">
+        <h1 class="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-white to-red-500 mb-2">
+            ร.อ. ธรรมนัส พรหมเผ่า
+        </h1>
+        <p class="text-gray-400 text-lg md:text-xl">จาก "คดีดัง" สู่ "ผู้มากบารมี" แห่งรัฐบาลไทย</p>
+        <div class="mt-4 flex justify-center gap-4 text-sm text-gray-500">
+            <span class="px-3 py-1 bg-gray-700 rounded-full"><i class="fas fa-birthday-cake mr-2"></i>อายุ 60 ปี</span>
+            <span class="px-3 py-1 bg-gray-700 rounded-full"><i class="fas fa-map-marker-alt mr-2"></i>เลือดเนื้อเชื้อไขพะเยา</span>
+        </div>
+    </header>
+
+    <!-- Content Container -->
+    <div class="container mx-auto px-4 mt-12 relative overflow-hidden">
+        
+        <!-- Vertical Line -->
+        <div class="timeline-line hidden md:block"></div>
+        <!-- Mobile Line handled by border-l in cards -->
+
+        <!-- 1. กำเนิด & การศึกษา -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 relative">
+            <div class="w-full md:w-5/12 left-side flex justify-end pr-8 md:pr-0 timeline-content">
+                <div class="card-box bg-gray-800 p-6 rounded-xl border-l-4 border-blue-400 shadow-lg w-full md:w-full card-hover transition-all duration-300">
+                    <div class="text-blue-400 font-bold text-xl mb-2">2508 - 2530</div>
+                    <h3 class="text-2xl font-bold mb-2">กำเนิด & การศึกษา</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1 text-sm">
+                        <li><strong>ชื่อเดิม:</strong> ยุทธภูมิ โบพรหม</li>
+                        <li><strong>โรงเรียน:</strong> เตรียมทหาร รุ่นที่ 25 (ตท.25)</li>
+                        <li><strong>สถาบัน:</strong> จปร. รุ่นที่ 36 (รุ่นเดียวกับ เสธ.เปา)</li>
+                        <li><strong>เหล่าทัพ:</strong> เริ่มต้นในเหล่า <em>ทหารม้า</em></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-blue-500 rounded-full border-4 border-gray-900 flex items-center justify-center hidden md:flex">
+                <i class="fas fa-baby text-white text-xs"></i>
+            </div>
+            <div class="w-full md:w-5/12 right-side pl-8 md:pl-0"></div>
+        </div>
+
+        <!-- 2. ชีวิตราชการที่ผกผัน -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 relative">
+            <div class="w-full md:w-5/12 left-side pr-8 md:pr-0"></div>
+            <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-blue-700 rounded-full border-4 border-gray-900 flex items-center justify-center hidden md:flex">
+                <i class="fas fa-star text-white text-xs"></i>
+            </div>
+            <div class="w-full md:w-5/12 right-side flex justify-start pl-8 md:pl-0 timeline-content">
+                <div class="card-box bg-gray-800 p-6 rounded-xl border-l-4 border-blue-600 shadow-lg w-full card-hover transition-all duration-300">
+                    <div class="text-blue-400 font-bold text-xl mb-2">2532 - 2535</div>
+                    <h3 class="text-2xl font-bold mb-2">เส้นทางราชการที่ผกผัน</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <div>
+                                <strong>2532:</strong> บรรจุเป็น <em>ว่าที่ ร.ต.</em> รอง ผบ.หมวด ทม.รอ.
+                            </div>
+                        </li>
+                        <li class="flex items-start bg-red-900/20 p-2 rounded">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                            <div>
+                                <strong>2534:</strong> <span class="text-red-400">ถูกปลด (ครั้งที่ 1)</span> ฐานขัดคำสั่งผู้บังคับบัญชา<br>
+                                <span class="text-xs text-gray-400">(ปลัด กห. พล.อ.วันชัย เรืองตระกูล)</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start bg-blue-900/20 p-2 rounded">
+                            <i class="fas fa-redo text-blue-400 mt-1 mr-2"></i>
+                            <div>
+                                <strong>2535:</strong> ขอกลับเข้ารับราชการ <em>ทหารเรือ</em> แล้วย้ายกลับ ทบ.<br>
+                                <span class="text-xs text-gray-400">(รมว.กห. พล.อ.บรรจบ บุนนาค)</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. จุดพลิกผัน (คดีออสเตรเลีย) -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 relative">
+            <div class="w-full md:w-5/12 left-side flex justify-end pr-8 md:pr-0 timeline-content">
+                <div class="card-box bg-gray-800 p-6 rounded-xl border-l-4 border-red-500 shadow-lg w-full card-hover transition-all duration-300">
+                    <div class="text-red-400 font-bold text-xl mb-2">2536 - 2540</div>
+                    <h3 class="text-2xl font-bold mb-2">จุดเปลี่ยนที่ออสเตรเลีย</h3>
+                    <div class="bg-red-900/30 p-3 rounded mb-3 border border-red-700/50">
+                        <i class="fas fa-quote-left text-red-400 mr-2"></i>
+                        <span class="italic text-gray-300">"มันคือแป้ง" (วลีที่เกิดขึ้นภายหลัง)</span>
+                    </div>
+                    <ul class="list-disc list-inside text-gray-300 space-y-1">
+                        <li>ถูกจับที่นครซิดนีย์ ข้อหาเกี่ยวกับเฮโรอีน</li>
+                        <li>ใช้ชื่อ <strong>"มนัส พรหมเผ่า"</strong></li>
+                        <li>ให้การเจ้าหน้าที่ว่าเคยเป็น Bodyguard ให้รัชทายาท</li>
+                        <li>จำคุก 4 ปี (พ้นโทษและกลับไทยปี 2540)</li>
+                        <li class="bg-red-900/20 p-2 rounded border-l-2 border-red-500 mt-2 list-none">
+                            <i class="fas fa-times-circle text-red-500 mr-2"></i>
+                            <span class="text-red-400">ถูกถอดยศ และออกจากราชการ (ครั้งที่ 2)</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-red-600 rounded-full border-4 border-gray-900 flex items-center justify-center hidden md:flex">
+                <i class="fas fa-gavel text-white text-xs"></i>
+            </div>
+            <div class="w-full md:w-5/12 right-side pl-8 md:pl-0"></div>
+        </div>
+
+        <!-- 4. แสงสว่างและการกลับมา -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 relative">
+            <div class="w-full md:w-5/12 left-side pr-8 md:pr-0"></div>
+            <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-yellow-500 rounded-full border-4 border-gray-900 flex items-center justify-center hidden md:flex">
+                <i class="fas fa-sun text-white text-xs"></i>
+            </div>
+            <div class="w-full md:w-5/12 right-side flex justify-start pl-8 md:pl-0 timeline-content">
+                <div class="card-box bg-gray-800 p-6 rounded-xl border-l-4 border-yellow-400 shadow-lg w-full card-hover transition-all duration-300">
+                    <div class="text-yellow-400 font-bold text-xl mb-2">2539 - 2540</div>
+                    <h3 class="text-2xl font-bold mb-2">คืนยศ & เปลี่ยนชื่อ</h3>
+                    <ul class="list-disc list-inside text-gray-300 space-y-2 text-sm">
+                        <li><strong>2539:</strong> ได้รับอานิสงส์จาก <em>พ.ร.บ. ล้างมลทินฯ</em> ในวโรกาสครองราชย์ครบ 50 ปี</li>
+                        <li class="bg-yellow-900/20 p-2 rounded border-l-2 border-yellow-500"><strong>2540 (หลังกลับไทย):</strong><br>
+                            - เปลี่ยนชื่อเป็น <strong>"พชร พรหมเผ่า"</strong><br>
+                            - มีพระบรมราชโองการ <strong>คืนยศ "ร้อยโท"</strong></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5. มรสุมลูกใหญ่ -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 relative">
+            <div class="w-full md:w-5/12 left-side flex justify-end pr-8 md:pr-0 timeline-content">
+                <div class="card-box bg-gray-800 p-6 rounded-xl border-l-4 border-red-600 shadow-lg w-full card-hover transition-all duration-300">
+                    <div class="text-red-500 font-bold text-xl mb-2">2541</div>
+                    <h3 class="text-2xl font-bold mb-2">คดีฆาตกรรม & ถอดยศซ้ำ</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="bg-blue-900/20 p-2 rounded border-l-2 border-blue-500">
+                            <strong>ต้นปี 2541:</strong> กลับเข้ารับราชการ และเลื่อนยศเป็น <strong>"ร้อยเอก"</strong><br>
+                            <span class="text-xs text-gray-400">(ทหารสื่อข่าว นทพ.)</span>
+                        </li>
+                        <li class="bg-red-900/30 p-3 rounded border border-red-700/50">
+                            <div class="mb-2">
+                                <i class="fas fa-skull-crossbones text-red-500 mr-2"></i>
+                                <strong>คดีสะเทือนขวัญ:</strong> ตกเป็นผู้ต้องหาคดีอุ้มฆ่าข่มขืน <em>ดร.พูลสวัสดิ์</em>
+                            </div>
+                            <div class="ml-6 text-xs text-red-200/80 bg-black/20 p-2 rounded border border-red-500/30">
+                                <i class="fas fa-microscope mr-1"></i> พบอสุจิในทวารหนักเหยื่อ มีการตรวจ DNA แต่ไม่มีการเปิดเผยข้อมูลนิติเวช
+                            </div>
+                        </li>
+                        <li class="flex items-start bg-red-900/20 p-2 rounded">
+                            <i class="fas fa-times-circle text-red-500 mt-1 mr-2"></i>
+                            <div>
+                                <strong>ปลายปี 2541:</strong> ถูก <span class="text-red-400">ถอดยศ "ร้อยเอก"</span> (ยศเดิม) จากคดีนี้
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-red-700 rounded-full border-4 border-gray-900 flex items-center justify-center hidden md:flex">
+                <i class="fas fa-chain-broken text-white text-xs"></i>
+            </div>
+            <div class="w-full md:w-5/12 right-side pl-8 md:pl-0"></div>
+        </div>
+
+        <!-- 6. สิ้นสุดคดีความ & เริ่มต้นใหม่ & ธุรกิจ -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 relative">
+            <div class="w-full md:w-5/12 left-side pr-8 md:pr-0"></div>
+            <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-orange-500 rounded-full border-4 border-gray-900 flex items-center justify-center hidden md:flex">
+                <i class="fas fa-briefcase text-white text-xs"></i>
+            </div>
+            <div class="w-full md:w-5/12 right-side flex justify-start pl-8 md:pl-0 timeline-content">
+                <div class="card-box bg-gray-800 p-6 rounded-xl border-l-4 border-orange-500 shadow-lg w-full card-hover transition-all duration-300">
+                    <div class="text-orange-400 font-bold text-xl mb-2">2544 - 2556</div>
+                    <h3 class="text-2xl font-bold mb-2">อาณาจักรธุรกิจ "ธรรมนัสกรุ๊ป"</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                         <li><strong class="text-white">2544:</strong> ได้รับการประกันตัว เริ่มทำธุรกิจ <strong>"ธรรมนัส การ์ด"</strong> (รปภ.)</li>
+                         <li class="bg-gray-700/50 p-3 rounded">
+                             <strong class="block text-white mb-1">ธุรกิจในเครือธรรมนัสกรุ๊ป (ทำอะไรบ้าง?)</strong>
+                             <ul class="list-disc list-inside text-gray-400 text-xs space-y-1">
+                                 <li><strong>บจก. ธรรมนัส การ์ด (2546):</strong> รักษาความปลอดภัย</li>
+                                 <li><strong>หจก. ขวัญฤดี (2548):</strong> ตัวแทนจำหน่ายสลากกินแบ่งฯ (จุดเริ่ม 5 เสือ)</li>
+                                 <li><strong>บจก. ลีเกิ้ล โปรเฟสชั่นแนล (2552):</strong> บริหารตลาดคลองเตย (สัมปทาน)</li>
+                                 <li><strong>บจก. เดอะ ซิตี้ พาวเวอร์:</strong> รับเหมาก่อสร้างและบริหารจัดการ</li>
+                             </ul>
+                         </li>
+                         <li>
+                             <div class="flex items-center text-yellow-400 font-bold bg-yellow-900/30 p-2 rounded w-fit mt-2">
+                                 <i class="fas fa-id-card-alt mr-2"></i> 2554: เปลี่ยนชื่อเป็น "ธรรมนัส พรหมเผ่า"
+                             </div>
+                         </li>
+                         <li class="text-xs text-gray-500 mt-1">
+                             <i class="fas fa-user-friends mr-1"></i> ตำแหน่งการเมือง: คณะทำงานยุทธศาสตร์พรรคไทยรักไทย (หลังบ้าน)
+                         </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 7. อิทธิพลมืด & คดีความ & เริ่มลงการเมือง -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 relative">
+            <div class="w-full md:w-5/12 left-side flex justify-end pr-8 md:pr-0 timeline-content">
+                <div class="card-box bg-gray-800 p-6 rounded-xl border-l-4 border-red-500 shadow-lg w-full card-hover transition-all duration-300">
+                    <div class="text-red-400 font-bold text-xl mb-2">2552 - 2557</div>
+                    <h3 class="text-2xl font-bold mb-2">คดีความ & เริ่มลงสมัคร สส.</h3>
+                    <div class="space-y-4 text-sm text-gray-300">
+                        <!-- คดีเผาชุมชน -->
+                        <div class="bg-red-900/20 p-3 rounded border-l-2 border-red-500">
+                            <strong class="text-white block mb-1">2552: คดีจ้างวานเผาชุมชน 4 ภาค (คลองเตย)</strong>
+                            <p class="mb-1">ความขัดแย้งเรื่องไล่ที่ทำตลาด</p>
+                            <p class="text-xs text-green-400 mt-1"><i class="fas fa-gavel mr-1"></i> ผล: ศาลยกฟ้อง</p>
+                        </div>
+                        
+                        <!-- การเมือง 2557 -->
+                        <div class="bg-blue-900/20 p-3 rounded border-l-2 border-blue-500">
+                            <strong class="text-white block mb-1">2557: ลงสมัคร สส. ครั้งแรก</strong>
+                            <p class="mb-1"><i class="fas fa-vote-yea text-blue-400 mr-1"></i> ผู้สมัคร สส. บัญชีรายชื่อ พรรคเพื่อไทย (ลำดับที่ 55)</p>
+                            <p class="text-xs text-gray-400">แต่การเลือกตั้งเป็นโมฆะ</p>
+                        </div>
+
+                        <!-- 5 เสือกองสลาก -->
+                        <div class="bg-orange-900/20 p-3 rounded border-l-2 border-orange-500">
+                            <strong class="text-white block mb-1">2557 (ยุค คสช.): คดี 5 เสือกองสลาก</strong>
+                            <p class="mb-1">ถูก คสช. ปราบปรามและยึดคืนโควตาลอตเตอรี่</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-red-600 rounded-full border-4 border-gray-900 flex items-center justify-center hidden md:flex">
+                <i class="fas fa-fire text-white text-xs"></i>
+            </div>
+            <div class="w-full md:w-5/12 right-side pl-8 md:pl-0"></div>
+        </div>
+
+        <!-- 8. พลังประชารัฐ & ตำแหน่งรัฐมนตรี & ข่าวฉาว -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 relative">
+            <div class="w-full md:w-5/12 left-side pr-8 md:pr-0"></div>
+            <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-purple-600 rounded-full border-4 border-gray-900 flex items-center justify-center hidden md:flex">
+                <i class="fas fa-landmark text-white text-xs"></i>
+            </div>
+            <div class="w-full md:w-5/12 right-side flex justify-start pl-8 md:pl-0 timeline-content">
+                <div class="card-box bg-gray-800 p-6 rounded-xl border-l-4 border-purple-500 shadow-lg w-full card-hover transition-all duration-300">
+                    <div class="text-purple-400 font-bold text-xl mb-2">2560 - 2564</div>
+                    <h3 class="text-2xl font-bold mb-2">แม่ทัพภาคเหนือ & รมช.</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li><strong>2561:</strong> ย้ายสังกัด พปชร. เป็น <em>ประธานยุทธศาสตร์ภาคเหนือ</em></li>
+                         
+                        <li class="bg-blue-900/20 p-3 rounded border-l-2 border-blue-500">
+                            <strong class="text-white block mb-1">2560-2561: คดีโกงบิตคอยน์</strong>
+                            <p class="text-xs text-blue-300 mt-1">ผล: ปฏิเสธข้อหา / ไกล่เกลี่ยคืนเงิน</p>
+                        </li>
+
+                        <!-- ตำแหน่ง รมช. & หน้ากากอนามัย -->
+                        <li class="bg-purple-900/30 p-2 rounded border border-purple-500">
+                            <strong class="text-white">2562: รมช.เกษตรและสหกรณ์</strong>
+                            <p class="text-xs mt-1">ตำแหน่งรัฐมนตรีครั้งแรก ใน รบ.ประยุทธ์ 2</p>
+                            <div class="mt-2 text-xs text-yellow-300 bg-black/20 p-1 rounded">
+                                <i class="fas fa-exclamation-triangle mr-1"></i> ปมวุฒิปริญญาเอก California & วาทะ "มันคือแป้ง"
+                            </div>
+                            <!-- เพิ่มเรื่องหน้ากากอนามัย -->
+                            <div class="mt-2 text-xs text-red-300 bg-black/20 p-1 rounded">
+                                <i class="fas fa-head-side-mask mr-1"></i> <strong>2563: ปมกักตุนหน้ากากอนามัย</strong><br>
+                                คนใกล้ชิด (พิตตินันท์) ถูกกล่าวหา<br>
+                                <span class="text-green-400">ผล: ปลดคณะทำงาน / ตร. ไม่แจ้งข้อหาธรรมนัส</span>
+                            </div>
+                        </li>
+
+                        <li class="bg-red-900/20 p-2 rounded border-l-2 border-red-500"><strong>2564: เลขาธิการพรรค พปชร.</strong><br>และถูกปลดพ้น ครม. จากเหตุกบฏล้มนายกฯ</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 9. ปัจจุบัน (พรรคกล้าธรรม & มรสุมรอบใหม่) -->
+        <div class="flex flex-col md:flex-row items-center justify-between mb-12 relative">
+            <div class="w-full md:w-5/12 left-side flex justify-end pr-8 md:pr-0 timeline-content">
+                <div class="card-box bg-gradient-to-br from-green-900 to-gray-800 p-6 rounded-xl border-2 border-green-500 shadow-xl w-full card-hover transition-all duration-300">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <div class="text-green-400 font-bold text-xl mb-2">2565 - ปัจจุบัน</div>
+                            <h3 class="text-2xl font-bold mb-2 text-white">ผู้มากบารมี & เป้ากระสุนตก</h3>
+                        </div>
+                        <i class="fas fa-crown text-4xl text-yellow-500"></i>
+                    </div>
+                    
+                    <div class="mt-4 space-y-4 text-sm text-gray-300">
+                        <!-- ส่วนประเด็นร้อน (เพิ่มใหม่) -->
+                        <div class="bg-red-900/30 p-3 rounded border border-red-500/50">
+                            <strong class="text-red-400 block mb-2"><i class="fas fa-bomb mr-2"></i> มรสุมข่าวเจาะลึก & แฉ (2565-68)</strong>
+                            <ul class="list-disc list-inside space-y-2 text-xs">
+                                <li>
+                                    <strong class="text-white">คดีตู้ห่าว (2565):</strong> ชูวิทย์แฉ "ทุนจีนสีเทา" เชื่อมโยงการใช้เครื่องบินส่วนตัว
+                                </li>
+                                <li>
+                                    <strong class="text-white">Scammer (2568):</strong> ถูกโยงความสัมพันธ์กับ <em>Ben Smith</em> (ฟอกเงิน) และ สส. ชนนพัฒฐ์ (คนสนิท)
+                                </li>
+                                <li>
+                                    <strong class="text-white">มูลนิธิกัน จอมพลัง:</strong> ถูกขุดคุ้ยข้อบังคับ "หากเลิกมูลนิธิ ทรัพย์สินจะตกเป็นของธรรมนัส"
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- ส่วนตำแหน่งการเมือง -->
+                        <ul class="space-y-2">
+                            <li class="flex items-start">
+                                <span class="min-w-[40px] font-bold text-green-400">2565:</span> 
+                                <span>ย้ายไป <em>พรรคเศรษฐกิจไทย</em> (ขน สส. ออก)</span>
+                            </li>
+                            <li class="flex items-start bg-green-900/30 p-2 rounded">
+                                <span class="min-w-[40px] font-bold text-green-400">2566:</span> 
+                                <div>
+                                    <span class="block">กลับ พปชร. เป็น <strong>เลขาธิการพรรค</strong></span>
+                                    <span class="block text-white font-bold mt-1"><i class="fas fa-leaf mr-1"></i> รมว.เกษตรและสหกรณ์ (รบ.เศรษฐา)</span>
+                                </div>
+                            </li>
+                            <li class="flex items-start bg-green-800/50 p-2 rounded border border-green-400">
+                                <span class="min-w-[40px] font-bold text-green-400">2568:</span> 
+                                <div>
+                                    <span class="block font-bold text-white text-lg">รองนายกรัฐมนตรี</span>
+                                    <span class="block text-sm">และ รมว.เกษตรฯ (พรรคกล้าธรรม)</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-dot absolute left-1/2 transform -translate-x-1/2 w-10 h-10 bg-green-500 rounded-full border-4 border-gray-900 flex items-center justify-center hidden md:flex animate-pulse">
+                <i class="fas fa-check text-white text-xs"></i>
+            </div>
+            <div class="w-full md:w-5/12 right-side pl-8 md:pl-0"></div>
+        </div>
+
+    </div>
+
+    <!-- Stats / Summary Footer -->
+    <div class="container mx-auto px-4 pb-10">
+        <h2 class="text-2xl text-center font-bold mb-6 text-gray-400">ขุมพลังทางการเมือง (3 อ.)</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-gray-800 p-6 rounded-lg text-center border-t-4 border-blue-500">
+                <i class="fas fa-chess-king text-4xl text-blue-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">อำนาจต่อรอง</h3>
+                <p class="text-gray-400 text-sm">คุมเสียง สส. กลุ่มงูเห่า และเป็นตัวแปรความอยู่รอดของรัฐบาล</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg text-center border-t-4 border-purple-500">
+                <i class="fas fa-tools text-4xl text-purple-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">อรรถประโยชน์</h3>
+                <p class="text-gray-400 text-sm">มือประสานสิบทิศ (Fixer) เคลียร์จบทุกปัญหาที่คุยบนโต๊ะไม่ได้</p>
+            </div>
+            <div class="bg-gray-800 p-6 rounded-lg text-center border-t-4 border-red-500">
+                <i class="fas fa-bomb text-4xl text-red-500 mb-4"></i>
+                <h3 class="text-xl font-bold mb-2">อาวุธลับ</h3>
+                <p class="text-gray-400 text-sm">กุมความลับทางการเงินและเครือข่ายของนักการเมืองคนอื่น (Mutual Destruction)</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
